@@ -1,0 +1,44 @@
+[
+  {
+    "project": "random project name",
+    "time": "summer 2019",
+    "cover-image": "http://....jpg",
+    "descrition": "blahblahblah"
+  },
+  {
+    "project": "another",
+    "time": "fall 2019",
+    "cover-image": "http://....jpg",
+    "description": "blahbalhablah"
+  },
+  {
+    "project": "project 3??!!",
+    "time": "fall 2019",
+    "cover-image": "http://....jpg",
+    "description": "blahbalhablah"
+  },
+  {
+    "project": "project 4",
+    "time": "summer 2019",
+    "cover-image": "http://....jpg",
+    "description": "blahbalhablah"
+  },
+  {
+    "project": "project 5?",
+    "time": "fall 2019",
+    "cover-image": "http://....jpg",
+    "description": "blahbalhablah"
+  },
+  {
+    "project": "project 6",
+    "time": "fall 2019",
+    "cover-image": "http://....jpg",
+    "description": "blahbalhablah"
+  },
+  {
+    "project": "project 7",
+    "time": "fall 2019",
+    "cover-image": "http://....jpg",
+    "description": "blahbalhablah"
+  }
+]

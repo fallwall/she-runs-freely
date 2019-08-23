@@ -1,5 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Projects from './components/Projects';
+import SketchBook from './components/SketchBook';
+import AllProjects from './components/AllProjects';
+import Home from './components/Home';
 import './App.css';
 
 class App extends React.Component {
@@ -7,10 +12,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <header>
-          <h1>The Beginning of Something</h1>
+          <Nav />
         </header>
 
-       
+        <Route path="/" render={() => <Home />} />
+        <Route path="/projects" render={() => <Projects />} />
+        <Route path="/projects-all" render={() => <AllProjects />} />
       </div>
     );
   }
