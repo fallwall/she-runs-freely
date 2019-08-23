@@ -1,15 +1,17 @@
 [
   {
-    "project": "random project name",
-    "time": "summer 2019",
+    "project": "Antipode Visualizer",
+    "time": "Summer 2019",
     "cover-image": "http://....jpg",
-    "descrition": "blahblahblah"
+    "url": "http://sherunsfreely.com/antipodes/",
+    "descrition": "Visual display of antipode of any location. Powered by MapBox API forward & reverse geocoding."
   },
   {
-    "project": "another",
-    "time": "fall 2019",
+    "project": "Video Killed The Radio Star",
+    "time": "Summer 2019",
     "cover-image": "http://....jpg",
-    "description": "blahbalhablah"
+    "url": "http://mtvimeo.surge.sh/",
+    "description": "Music player powered by Vimeo API. Music journey to 80s/90s/00s/10s. Bonus track available."
   },
   {
     "project": "project 3??!!",
