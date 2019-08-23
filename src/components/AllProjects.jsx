@@ -47,10 +47,6 @@ export default class AllProjects extends Component {
   }
 
   render() {
-    if (this.state !== null && this.state.hover) {
-      backgroundClass = `${backgroundClass} photo-tile-background-hover`;
-    }
-
     const rank = this.getTileRank();
     let delay = (rank * 0.05) + 0.05;
     let entranceAnimation = 'tile-entrance';
@@ -67,40 +63,50 @@ export default class AllProjects extends Component {
       cursor: 'pointer',
     };
 
+    const backgroundStyle = {
+      backgroundImage: `url(${this.props.image})`,
+    };
 
-    return (
-      <div>
-        <p>This is a full list of porjects.</p>
-        <div className="all-projects-container">
-          {this.state.projects.map(p =>
-            <div className={`project-box tile ${entranceAnimation}`}
-              onMouseEnter={this.onMouseEnter}
-              onMouseLeave={this.onMouseLeave}
-              onClick={this.clickedTile}
-              role="link"
-              tabIndex="0"
-              style={tileStyle}
-            >
-              <h3>{p.name}</h3>
-              <p>{p.description}</p>
-              <div className={backgroundClass} style={backgroundStyle}>
-              </div>
-            </div>)}
+
+    let backgroundClass = 'photo-tile-background';
+
+    if (this.state !== null && this.state.hover) {
+      backgroundClass = `${backgroundClass} photo-tile-background-hover`
+
+      return (
+        <div>
+          <p>This is a full list of porjects.</p>
+          <div className="all-projects-container">
+            {this.state.projects.map(p =>
+              <div className={`project-box tile ${entranceAnimation}`}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                onClick={this.clickedTile}
+                role="link"
+                tabIndex="0"
+                style={tileStyle}
+              >
+                <h3>{p.name}</h3>
+                <p>{p.description}</p>
+                <div className={backgroundClass} style={backgroundStyle}>
+                </div>
+              </div>)}
+          </div>
         </div>
-      </div>
-    )
+      )
+    }
   }
 }
 
-PhotoTile.propTypes = {
-  id: PropTypes.string.isRequired,
-  index: PropTypes.number.isRequired,
-  image: PropTypes.string.isRequired,
-  caption: PropTypes.string,
-  link: PropTypes.string.isRequired,
-  size: PropTypes.shape({
-    width: PropTypes.string.isRequired,
-    height: PropTypes.string.isRequired,
-  }).isRequired,
-  clickedTile: PropTypes.func.isRequired,
-};
+  AllProjects.propTypes = {
+    id: PropTypes.string.isRequired,
+    index: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
+    caption: PropTypes.string,
+    link: PropTypes.string.isRequired,
+    size: PropTypes.shape({
+      width: PropTypes.string.isRequired,
+      height: PropTypes.string.isRequired,
+    }).isRequired,
+    clickedTile: PropTypes.func.isRequired,
+  };
