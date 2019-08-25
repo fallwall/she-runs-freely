@@ -22,7 +22,7 @@ export default class AboutMe extends Component {
             <Waypoint onEnter={props.handleHideName} />
             <div className='bio'>
               <div className='prof-pic-container'>
-                <img src='/prof-pic.jpeg' className='prof-pic' alt='a portrait of the author as a work in progress' />
+                <img src={insert image after importing} className='prof-pic' alt='something?' />
                 <Skills handleResume={props.handleResume} />
               </div>
               <div className='bio-copy'>
