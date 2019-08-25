@@ -9,7 +9,7 @@ export default class AllProjects extends Component {
     super();
     this.state = {
       projects: [],
-      hover: false
+      hoverId: null
     }
   }
 
@@ -41,25 +41,25 @@ export default class AllProjects extends Component {
     this.props.clickedTile(data, this.props.index);
   }
 
-  getTileRank = () => {
-    const id = this.props.id;
-    return parseInt(id.replace(/\D/g, ''), 10);
-  }
+  // getTileRank = (id) => {
+
+  //   return parseInt(id.replace(/\D/g, ''), 10);
+  // }
 
   render() {
-    const rank = this.getTileRank();
-    let delay = (rank * 0.05) + 0.05;
+    // const rank = this.getTileRank();
+    // let delay = (rank * 0.05) + 0.05;
     let entranceAnimation = 'tile-entrance';
 
-    if (rank >= 20) {
-      delay = 0;
-      entranceAnimation = 'tile-skip-entrance';
-    }
+    // if (rank >= 20) {
+    //   delay = 0;
+    //   entranceAnimation = 'tile-skip-entrance';
+    // }
 
     const tileStyle = {
       width: this.props.size.width,
       paddingTop: this.props.size.height,
-      animationDelay: `${delay}s`,
+      // animationDelay: `${delay}s`,
       cursor: 'pointer',
     };
 
@@ -78,10 +78,10 @@ export default class AllProjects extends Component {
           <p>This is a full list of porjects.</p>
           <div className="all-projects-container">
             {this.state.projects.map(p =>
-              <div className={`project-box tile ${entranceAnimation}`}
+              <div key={p.id} className={`project-box tile ${entranceAnimation}`}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
-                onClick={this.clickedTile}
+                // onClick={()=>this.clickedTile(p.id)}
                 role="link"
                 tabIndex="0"
                 style={tileStyle}
@@ -98,15 +98,3 @@ export default class AllProjects extends Component {
   }
 }
 
-  AllProjects.propTypes = {
-    id: PropTypes.string.isRequired,
-    index: PropTypes.number.isRequired,
-    image: PropTypes.string.isRequired,
-    caption: PropTypes.string,
-    link: PropTypes.string.isRequired,
-    size: PropTypes.shape({
-      width: PropTypes.string.isRequired,
-      height: PropTypes.string.isRequired,
-    }).isRequired,
-    clickedTile: PropTypes.func.isRequired,
-  };
