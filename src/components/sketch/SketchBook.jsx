@@ -36,7 +36,7 @@ export default class SketchBook extends Component {
             </Fade>
           </div>
           <div className='design-footer'>
-            <p>I spent seven years of my life drawing on weekends.</p>
+            <p>I spent seven years of my life drawing on weekends. It was nothing.</p>
           </div>
         </div>
       </Fade>
