@@ -25,7 +25,7 @@ export default class AboutMe extends Component {
             </ScrollableAnchor>
             {/* <Waypoint onEnter={props.handleHideName} /> */}
             <div className='bio'>
-              <div className='prof-pic-container'>
+              <div className='profile-pic-container'>
                 <img src={ProPic} className='profile-pic' alt='something?' />
                 {/* <Skills handleResume={props.handleResume} /> */}
                 <Skills />

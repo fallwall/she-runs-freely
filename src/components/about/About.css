@@ -1,4 +1,41 @@
+.profile-pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .profile-pic {
-  width: 20vw;
-  height: 43vh;
+  height: 300px;
+    width: 300px;
+    padding: 15px;
+}
+
+
+/* skill part */
+
+.skills {
+  width: 300px;
+}
+
+.skills-head {
+  font-family: 'Major Mono Display', monospace;
+}
+
+.skills-head:hover {
+  text-transform: uppercase;
+}
+
+.skill-labels {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.skill-labels > div {
+  padding: 1px;
+}
+
+.skills-labels > div:hover {
+  color: pink;
 }
