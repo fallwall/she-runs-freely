@@ -9,3 +9,50 @@ a {
   margin: 10px;
 }
 
+.splash-page {
+  position: relative;
+  z-index: 2;
+}
+
+  /*name parallax container*/
+
+  .name-parallax {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .letter {
+    font-size: 90px;
+  }
+
+  /*scroll container*/
+
+  .scroll {
+    position: absolute;
+    top: 0;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .scroll-arrow {
+    color: pink;
+  }
+/* 
+  .icons {
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  } */

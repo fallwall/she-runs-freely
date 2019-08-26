@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Nav from './components/Nav';
+import Scroll from './components/Scroll';
+import Title from './components/Title';
 import Projects from './components/projects/Projects';
 import SketchBook from './components/sketch/SketchBook';
 import About from './components/about/About';
@@ -14,6 +16,53 @@ import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      loaded: false,
+      showScroll: true,
+      showName: true,
+      showModal: false,
+      designModal: false
+    }
+
+  }
+
+  handleHideScroll() {
+    this.setState({ showScroll: false });
+  }
+
+  handleHideName() {
+    this.setState({ showName: false });
+  }
+
+  handleModal() {
+    this.setState({ showModal: !this.state.showModal });
+  }
+
+  handleDesign() {
+    this.setState({
+      showDesign: true,
+      showWriting: false
+    });
+  }
+
+  handleDesignModal(e) {
+    e.persist();
+
+    const currentDesignURL = e.target.src;
+    if (!this.state.designModal) {
+      this.setState({ designModal: currentDesignURL });
+    } else {
+      this.setState({ designModal: false });
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ loaded: true })
+    }, 500);
+  }
 
   render() {
 
@@ -52,13 +101,13 @@ class App extends React.Component {
                   image: '',
                   amount: 0.1,
                   children: <div className='scroll'>
-                    {/* <Scroll showScroll={props.showScroll} /> */}
+                    <Scroll showScroll={this.state.showScroll} />
                   </div>
                 }, {
                   image: '',
                   amount: 0.9,
                   children: <>
-                    {/* <NamePara showName={props.showName} /> */}
+                    <Title showName={this.state.showName} />
                   </>,
                 }
               ]}
