@@ -74,17 +74,21 @@ export default class Projects extends Component {
         <h2>project List</h2>
         <div className="project-container">
           <div className="project-container-left">
-            {this.state.projectsleft.map(p =>
-              <Fade clear opposite when={this.state.show1}>
+            {this.state.projectsleft.map((p,i) =>
+              <Fade clear opposite when={`${this.state.show+i}`}>
                 <div className="project">
-                  <Waypoint onEnter={this.handle1} onLeave={this.handle1} />
+                  <Waypoint
+                    onEnter={`${this.handle+i}`}
+                    onLeave={`${this.handle+i}`} />
                   <Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
                     <img src='/bg.png' className='project-img' alt='PROJECT thumbnail' />
                   </Parallax>
                   
                   <Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
                     <div className='project-body'>
-                      <div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
+                      <div className='project-head'
+                        onMouseEnter={this.showDemo}
+                        onMouseLeave={this.hideDemo}>
                         <h1>
                           <a href='#'>{p.project}</a>
                         </h1>
