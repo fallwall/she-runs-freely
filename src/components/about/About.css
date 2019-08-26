@@ -39,3 +39,46 @@
 .skills-labels > div:hover {
   color: pink;
 }
+
+  /*bio container*/
+
+  .bio-container {
+    padding-top: 60px;
+    padding-right: 30px;
+  }
+
+  .intro {
+    padding-left: 30px;
+  }
+
+  .drop-cap-graf:first-letter {
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 65px;
+    float: left;
+    line-height: .9;
+    padding-right: 3px;
+    margin-left: .3em;
+  }
+
+  .drop-cap-graf:hover:first-letter {
+    color: pink;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .bio {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  .bio-copy {
+    text-align: left;
+  }
+
+  .bio-copy > h1 {
+    text-align: center;
+  }
