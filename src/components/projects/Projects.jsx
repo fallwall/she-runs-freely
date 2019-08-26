@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './Projects.css';
-import projectlist from '../data/projects.json';
+import projectlist from '../../data/projects.json';
 
 
 export default class Projects extends Component {

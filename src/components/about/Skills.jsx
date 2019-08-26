@@ -2,7 +2,7 @@ import React from 'react';
 import { Divider, Header, Label } from 'semantic-ui-react';
 import { Fade } from 'react-reveal';
 
-const Skills = (props) => {
+function Skills() {
 
   const skillList = [
     'JavaScript',
@@ -25,7 +25,8 @@ const Skills = (props) => {
   return (
     <div className='skills'>
       <Divider horizontal><Header><div className='skills-head'>skills</div></Header></Divider>
-      <div className='skill-labels' onClick={props.handleResume}>
+      <div className='skill-labels' >
+      {/* <div className='skill-labels' onClick={props.handleResume}> */}
         <Fade left cascade>
           {labels}
         </Fade>
@@ -33,4 +34,5 @@ const Skills = (props) => {
     </div>
   )
 }
+
 export default Skills;
