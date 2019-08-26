@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
 import './Projects.css';
 import projectlist from '../data/projects.json';
 
@@ -44,7 +44,7 @@ export default class Projects extends Component {
               </div>)}
             <div className="project-refresh">
             </div>
-              <Link className="link-button" to="/projects-all">see full list of projects</Link>
+
           </div>
           <div className="project-container-right">
             {this.state.projectsright.map(p =>
@@ -55,7 +55,7 @@ export default class Projects extends Component {
               </div>)}
             <div className="project-refresh">
             </div>
-              <Link className="link-button" to="/projects-all">see full list of projects</Link>
+
           </div>
         </div>
       </div>

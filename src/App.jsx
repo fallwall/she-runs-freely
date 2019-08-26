@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Projects from './components/Projects';
-import SketchBook from './components/SketchBook';
-import AllProjects from './components/AllProjects';
+import Projects from './components/projects/Projects';
+import SketchBook from './components/sketch/SketchBook';
+import About from './components/about/About';
+
 import Home from './components/Home';
 import './App.css';
 
@@ -17,7 +18,9 @@ class App extends React.Component {
 
         <Route path="/" render={() => <Home />} />
         <Route path="/projects" render={() => <Projects />} />
-        <Route path="/projects-all" render={() => <AllProjects />} />
+        <Route path="/sketch" render={() => <SketchBook />} />
+        <Route path="/about" render={() => <About />} />
+  
       </div>
     );
   }
