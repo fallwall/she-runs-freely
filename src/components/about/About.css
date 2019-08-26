@@ -51,7 +51,7 @@
     padding-left: 30px;
   }
 
-  .drop-cap-graf:first-letter {
+  .intro-more:first-letter {
     color: black;
     font-family: 'Major Mono Display', monospace;
     font-size: 65px;
@@ -61,7 +61,7 @@
     margin-left: .3em;
   }
 
-  .drop-cap-graf:hover:first-letter {
+  .intro-more:hover:first-letter {
     color: pink;
     font-weight: bold;
     text-transform: uppercase;
