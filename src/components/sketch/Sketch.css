@@ -1,0 +1,68 @@
+/*design container*/
+
+.design {
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+}
+
+.design > h1 {
+  color: black;
+  font-size: 60px;
+  padding-bottom: 15px;
+}
+
+.design-header:first-letter{
+  color: black;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 55px;
+  float: left;
+  line-height: .9;
+  padding-right: 10px;
+}
+
+.design-header:hover:first-letter{
+  text-transform: uppercase;
+  color: tomato;
+}
+
+.design-port {
+  padding: 30px 0px 30px 0px;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.enlarge {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+.enlarge:hover {
+  text-transform: uppercase;
+}
+
+.design-thumb:hover {
+  opacity: .5;
+  position: relative;
+  z-index: 2;
+}
+
+.design-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.design-big {
+  padding: 10px;
+}
