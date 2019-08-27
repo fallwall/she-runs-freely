@@ -51,11 +51,11 @@ class App extends React.Component {
   handleDesignModal(e) {
     e.persist();
     const currentDesignURL = e.target.src;
-    if (!this.state.designModal) {
-      this.setState({ designModal: currentDesignURL });
-    } else {
-      this.setState({ designModal: false });
-    }
+    // if (!this.state.designModal) {
+    //   this.setState({ designModal: currentDesignURL });
+    // } else {
+    //   this.setState({ designModal: false });
+    // }
   }
 
   componentDidMount() {
@@ -95,16 +95,6 @@ class App extends React.Component {
             showDesign={this.state.showDesign}
           />} />
           <Route path="/about" render={() => <About />} />
-
-
-
-          <div className="home-page-container">
-            <div className="home-page">
-              <h1>TIBBY XU</h1>
-              <h2>DEVELOPER</h2>
-              <h2>DESIGNER</h2>
-            </div>
-          </div>
 
         </ ParallaxProvider>
       </div>
