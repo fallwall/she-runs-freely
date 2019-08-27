@@ -29,26 +29,26 @@ class App extends React.Component {
 
   }
 
-  handleHideScroll() {
+  handleHideScroll = () => {
     this.setState({ showScroll: false });
   }
 
-  handleHideName() {
+  handleHideName = () => {
     this.setState({ showName: false });
   }
 
-  handleModal() {
+  handleModal = () => {
     this.setState({ showModal: !this.state.showModal });
   }
 
-  handleDesign() {
+  handleDesign = () => {
     this.setState({
       showDesign: true,
       showWriting: false
     });
   }
 
-  handleDesignModal(e) {
+  handleDesignModal = (e) => {
     e.persist();
     const currentDesignURL = e.target.src;
     // if (!this.state.designModal) {
@@ -56,6 +56,12 @@ class App extends React.Component {
     // } else {
     //   this.setState({ designModal: false });
     // }
+  }
+
+  handleResume = () => {
+    this.setState(prevState => ({
+      showResume: !prevState.showResume
+    }))
   }
 
   componentDidMount() {
@@ -75,7 +81,7 @@ class App extends React.Component {
             <Nav />
           </header>
 
-          <Route path="/" render={() => <Home
+          <Route exact path="/" render={() => <Home
             loaded={this.state.loaded}
             handleModal={this.handleModal}
             handleResume={this.handleResume}
@@ -94,7 +100,10 @@ class App extends React.Component {
             showWriting={this.state.showWriting}
             showDesign={this.state.showDesign}
           />} />
-          <Route path="/about" render={() => <About />} />
+          <Route path="/about" render={() => <About
+            handleResume={this.handleResume}
+          />} />
+        
 
         </ ParallaxProvider>
       </div>

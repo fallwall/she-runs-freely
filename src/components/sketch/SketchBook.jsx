@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
 import { Fade } from 'react-reveal';
 import { Image } from 'semantic-ui-react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import './Sketch.css';
+import SketchBox from './SketchBox';
 
 export default class SketchBook extends Component {
   render() {
@@ -22,27 +22,33 @@ export default class SketchBook extends Component {
     });
 
     return (
-      <Fade left opposite when={this.props.showDesign} >
- 
-        <div className='design'>
-          <h1>Sketch</h1>
-          <ScrollableAnchor id={'design'}>
-            <div className='design-header'>
-              <p>I was asked to write instruction for my successor in previous job and I drew 20 pages instead.</p>
-              <p className='enlarge'>(click to enlarge)</p>
+      <>
+        <Fade left opposite when={this.props.showDesign} >
+
+          <div className='design'>
+            <h1>Sketch</h1>
+            <ScrollableAnchor id={'design'}>
+              <div className='design-header'>
+                <p>I was asked to write instruction for my successor in previous job and I drew 20 pages instead.</p>
+                <p className='enlarge'>(click to enlarge)</p>
+              </div>
+            </ScrollableAnchor>
+            <div className='design-port'>
+              <Fade left cascade when={this.props.showDesign} >
+
+                {designs}
+              </Fade>
             </div>
-          </ScrollableAnchor>
-          <div className='design-port'>
-            <Fade left cascade when={this.props.showDesign} >
-         
-              {designs}
-            </Fade>
+            <div className='design-footer'>
+              <p>Music inspired.</p>
+            </div>
           </div>
-          <div className='design-footer'>
-            <p>Music inspired.</p>
-          </div>
-        </div>
-      </Fade>
+        </Fade>
+        <SketchBox
+          handleDesignModal={this.props.handleDesignModal}
+          designModal={this.props.designModal}
+        />
+      </>
     )
   }
 }

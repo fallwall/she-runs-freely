@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Skills from './Skills';
 import { Fade } from 'react-reveal';
 
+
 import ProPic from '../../images/temp_profile.jpg';
 
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
@@ -24,12 +25,16 @@ export default class AboutMe extends Component {
             <div className='bio'>
               <div className='profile-pic-container'>
                 <img src={ProPic} className='profile-pic' alt='something?' />
-                {/* <Skills handleResume={props.handleResume} /> */}
-                <Skills />
+                <Skills handleResume={this.props.handleResume} />
+               
               </div>
               <div className='bio-copy'>
-                <h1>about me</h1>
-                <p></p>
+                <h1>ABOUT ME</h1>
+                <p>New York City based maker, web designer & developer.</p>
+                <p>Never not learning, creating, and exploring something new.</p>
+                <p>Can be found coding from either a coffee shop or a cider bar.</p>
+                <p>Currently calls Upper West Side home with fierce kitty Roe.</p>
+                <p>Running since 2014, chasing unicorn and a bi-coastal dream.</p>
               </div>
             </div>
           </Fade>
