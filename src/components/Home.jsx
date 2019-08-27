@@ -1,9 +1,9 @@
 import React from 'react';
-import Scroll from './Scroll';
-import Title from './Title';
 import { Fade } from 'react-reveal';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import HomeContent from './HomeContent';
+import Scroll from './Scroll';
+import Title from './Title';
 
 export default function Home(props) {
 

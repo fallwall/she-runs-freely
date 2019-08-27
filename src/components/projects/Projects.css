@@ -1,3 +1,9 @@
+h1 {
+color: black;
+  font-size: 60px;
+  padding-bottom: 15px;
+}
+
 .project-container {
   background-color: aqua;
   width:100vw;
@@ -34,4 +40,26 @@ margin:5% 10%;
   color: white;
   margin: 5% 10%;
   padding: 5%;
+}
+
+
+.project-header p {
+  text-align:left;
+  padding-left: 30px;
+}
+
+.project-header:first-letter {
+  color: black;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 65px;
+  float: left;
+  line-height: .9;
+  padding-right: 3px;
+  margin-left: .3em;
+}
+
+.project-header:hover:first-letter {
+  color: pink;
+  font-weight: bold;
+  text-transform: uppercase;
 }

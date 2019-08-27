@@ -1,17 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Nav from './components/Nav';
-
 import Projects from './components/projects/Projects';
 import SketchBook from './components/sketch/SketchBook';
 import About from './components/about/About';
-
 import Home from './components/Home';
 import './App.css';
-import Slide from 'react-reveal/Slide';
-import { ParallaxProvider } from 'react-scroll-parallax';
-
-
 
 class App extends React.Component {
   constructor() {

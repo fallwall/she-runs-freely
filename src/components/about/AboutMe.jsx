@@ -10,7 +10,7 @@ export default class AboutMe extends Component {
     return (
       <div>
         <div className='bio-container'>
-
+          <h1>ABOUT ME</h1>
           <Fade clear cascade>
 
             <div className='intro'>
@@ -25,7 +25,7 @@ export default class AboutMe extends Component {
 
               </div>
               <div className='bio-copy'>
-                <h1>ABOUT ME</h1>
+
                 <p>New York City based maker, web designer & developer.</p>
                 <p>Never not learning, creating, and exploring something new.</p>
                 <p>Can be found coding from either a coffee shop or a cider bar.</p>
