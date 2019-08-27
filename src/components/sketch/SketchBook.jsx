@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Fade } from 'react-reveal';
 import { Image } from 'semantic-ui-react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-
+import './Sketch.css';
 
 export default class SketchBook extends Component {
   render() {
@@ -16,14 +16,14 @@ export default class SketchBook extends Component {
           className='design-thumb'
           id={i}
           size='small'
-        // onClick={props.handleDesignModal}
+          onClick={this.props.handleDesignModal}
         />
       )
     });
 
     return (
-      // <Fade left opposite when={props.showDesign} >
-      <Fade left opposite >
+      <Fade left opposite when={this.props.showDesign} >
+ 
         <div className='design'>
           <h1>Sketch</h1>
           <ScrollableAnchor id={'design'}>
@@ -33,8 +33,8 @@ export default class SketchBook extends Component {
             </div>
           </ScrollableAnchor>
           <div className='design-port'>
-            {/* <Fade left cascade when={props.showDesign} > */}
-            <Fade left cascade >
+            <Fade left cascade when={this.props.showDesign} >
+         
               {designs}
             </Fade>
           </div>

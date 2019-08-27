@@ -17,11 +17,11 @@ export default function Home(props) {
           className='splash-parallax'
           layers={[
             {
-              image: '/teton-11.png',
-              amount: 0,
+              image: '/teton1.png',
+              amount: 0.0,
             }, {
               image: '/teton2.png',
-              amount: 0.6,
+              amount: -0.3,
             }, {
               image: '/teton3.png',
               amount: 0.2,
@@ -33,7 +33,7 @@ export default function Home(props) {
               </div>
             }, {
               image: '',
-              amount: 0.9,
+              amount: 0.8,
               children: <>
                 <Title showName={props.showName} />
               </>,

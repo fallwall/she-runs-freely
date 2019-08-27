@@ -21,7 +21,10 @@ class App extends React.Component {
       showScroll: true,
       showName: true,
       showModal: false,
-      designModal: false
+      showResume: false,
+      showWriting: false,
+      showDesign: true,
+      designModal: false,
     }
 
   }
@@ -47,7 +50,6 @@ class App extends React.Component {
 
   handleDesignModal(e) {
     e.persist();
-
     const currentDesignURL = e.target.src;
     if (!this.state.designModal) {
       this.setState({ designModal: currentDesignURL });
@@ -74,17 +76,27 @@ class App extends React.Component {
           </header>
 
           <Route path="/" render={() => <Home
-             loaded={this.state.loaded}
-             handleModal={this.handleModal}
-             handleResume={this.handleResume}
-             showScroll={this.state.showScroll} 
-             showName={this.state.showName}
+            loaded={this.state.loaded}
+            handleModal={this.handleModal}
+            handleResume={this.handleResume}
+            showScroll={this.state.showScroll}
+            showName={this.state.showName}
           />} />
           <Route path="/projects" render={() => <Projects />} />
-          <Route path="/sketch" render={() => <SketchBook />} />
+          <Route path="/sketch" render={() => <SketchBook
+            handleHideScroll={this.handleHideScroll}
+            handleHideName={this.handleHideName}
+            handleModal={this.handleModal}
+            handleResume={this.handleResume}
+            handleWriting={this.handleWriting}
+            handleDesign={this.handleDesign}
+            handleDesignModal={this.handleDesignModal}
+            showWriting={this.state.showWriting}
+            showDesign={this.state.showDesign}
+          />} />
           <Route path="/about" render={() => <About />} />
 
-         
+
 
           <div className="home-page-container">
             <div className="home-page">
