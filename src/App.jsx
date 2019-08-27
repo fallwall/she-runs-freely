@@ -103,7 +103,7 @@ class App extends React.Component {
           <Route path="/about" render={() => <About
             handleResume={this.handleResume}
           />} />
-        
+
 
         </ ParallaxProvider>
       </div>

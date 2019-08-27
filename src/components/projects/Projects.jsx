@@ -8,9 +8,6 @@ import { Parallax } from 'react-scroll-parallax';
 import { Fade } from 'react-reveal';
 import { Icon } from 'semantic-ui-react';
 
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
-
-configureAnchors({ offset: 226, scrollDuration: 200 });
 
 
 export default class Projects extends Component {

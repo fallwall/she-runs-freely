@@ -7,7 +7,7 @@ const Title = (props) => {
   const showName = props.showName;
 
   const makeName = () => {
-    const myName = 'TIBBY XU'.split('');
+    const myName = 'SHERUNSFREELY'.split('');
     const letters = myName.map((letter, i) => {
       return (
         <Parallax
