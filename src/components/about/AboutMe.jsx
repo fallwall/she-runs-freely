@@ -30,6 +30,7 @@ export default class AboutMe extends Component {
                 <p>I enjoy constant learning, creating, and exploring something new.</p>
                 <p>To bring laughter to my friends is the major source of motivation.</p>
                 <p>Can be found coding from either a coffee shop or a cider bar.</p>
+                <p>I spent my early twenties in airports and one-way flights,</p>
                 <p>Currently calls Upper West Side home with fierce kitty Roe.</p>
                 <p>Running distance, chasing unicorn and a bi-coastal dream.</p>
                 <br />
