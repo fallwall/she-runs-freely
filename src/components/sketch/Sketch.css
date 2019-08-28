@@ -1,6 +1,6 @@
-/*design container*/
+/*sketch container*/
 
-.design {
+.sketch {
   padding: 0px 30px 0px 30px;
   display: flex;
   flex-direction: column;
@@ -8,16 +8,16 @@
   align-items: center;
   position: absolute;
   z-index: 2;
-  top: 30px;
+  top: 25vh;
 }
 
-.design > h1 {
+.sketch > h1 {
   color: black;
   font-size: 60px;
   padding-bottom: 15px;
 }
 
-.design-header:first-letter{
+.sketch-header:first-letter{
   color: black;
   font-family: 'Major Mono Display', monospace;
   font-size: 55px;
@@ -26,12 +26,12 @@
   padding-right: 10px;
 }
 
-.design-header:hover:first-letter{
+.sketch-header:hover:first-letter{
   text-transform: uppercase;
   color: pink;
 }
 
-.design-port {
+.sketch-port {
   padding: 30px 0px 30px 0px;
   width: 80%;
   display: flex;
@@ -50,24 +50,24 @@
   text-transform: uppercase;
 }
 
-.design-thumb:hover {
+.sketch-thumb:hover {
   opacity: .5;
   position: relative;
   z-index: 2;
 }
 
-.design-modal {
+.sketch-modal {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.design-big {
+.sketch-big {
   padding: 10px;
 }
 
-.design-thumb{
+.sketch-thumb{
   width: 20vw;
   height: 20vh;
 }

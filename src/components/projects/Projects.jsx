@@ -67,61 +67,64 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <Fade>
-        <h1>Projects</h1>
-        <div className='project-header'>
-          <p>I make things like this.</p>
-        </div>
-        <div className="project-page-container">
-          
-          <div className="project-container">
-            <div className="project-container-left">
-              {this.state.projectsleft.map((p, i) =>
-                <Fade clear opposite when={`${this.state.show + i}`}>
-                  <div className="project">
-                    <Waypoint
-                      onEnter={`${this.handle + i}`}
-                      onLeave={`${this.handle + i}`} />
-                    <Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-                      <img src='/bg.png' className='project-img' alt='PROJECT thumbnail' />
-                    </Parallax>
+      <>
+        <h1>PROJECTS</h1>
+        <Fade>
 
-                    <Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
-                      <div className='project-body'>
-                        <div className='project-head'
-                          onMouseEnter={this.showDemo}
-                          onMouseLeave={this.hideDemo}>
-                          <h1>
-                            <a href='#'>{p.project}</a>
-                          </h1>
-                          <Icon name='chevron left' className='demo-arrow' />
-                          <div className='demo'>
-                            <Fade right when={this.state.showDemo} >click to demo</Fade>
+          <div className='project-header'>
+            <p>I make things like this.</p>
+          </div>
+          <div className="project-page-container">
+
+            <div className="project-container">
+              <div className="project-container-left">
+                {this.state.projectsleft.map((p, i) =>
+                  <Fade clear opposite when={`${this.state.show + i}`}>
+                    <div className="project">
+                      <Waypoint
+                        onEnter={`${this.handle + i}`}
+                        onLeave={`${this.handle + i}`} />
+                      <Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
+                        <img src='/bg.png' className='project-img' alt='PROJECT thumbnail' />
+                      </Parallax>
+
+                      <Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
+                        <div className='project-body'>
+                          <div className='project-head'
+                            onMouseEnter={this.showDemo}
+                            onMouseLeave={this.hideDemo}>
+                            <h1>
+                              <a href='#'>{p.project}</a>
+                            </h1>
+                            <Icon name='chevron left' className='demo-arrow' />
+                            <div className='demo'>
+                              <Fade right when={this.state.showDemo} >click to demo</Fade>
+                            </div>
                           </div>
+                          <p>{p.description}</p>
                         </div>
-                        <p>{p.description}</p>
-                      </div>
-                    </Parallax>
-                  </div>
-                </Fade>)}
-              <div className="project-refresh">
-              </div>
+                      </Parallax>
+                    </div>
+                  </Fade>)}
+                <div className="project-refresh">
+                </div>
 
-            </div>
-            <div className="project-container-right">
-              {this.state.projectsright.map(p =>
-                <div className="project">
-                  <h2>{p.project}</h2>
-                  <p>{p.time}</p>
-                  <p>{p.description}</p>
-                </div>)}
-              <div className="project-refresh">
               </div>
+              <div className="project-container-right">
+                {this.state.projectsright.map(p =>
+                  <div className="project">
+                    <h2>{p.project}</h2>
+                    <p>{p.time}</p>
+                    <p>{p.description}</p>
+                  </div>)}
+                <div className="project-refresh">
+                </div>
 
+              </div>
             </div>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </>
     )
   }
 }

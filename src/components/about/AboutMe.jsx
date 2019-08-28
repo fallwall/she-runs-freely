@@ -9,8 +9,9 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div>
+        <h1>ABOUT ME</h1>
         <div className='bio-container'>
-          <h1>ABOUT ME</h1>
+
           <Fade clear cascade>
 
             <div className='intro'>

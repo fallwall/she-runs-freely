@@ -18,8 +18,8 @@ class App extends React.Component {
       showModal: false,
       showResume: false,
       showWriting: false,
-      showDesign: true,
-      designModal: false,
+      showsketch: true,
+      sketchModal: false,
     }
 
   }
@@ -36,20 +36,20 @@ class App extends React.Component {
     this.setState({ showModal: !this.state.showModal });
   }
 
-  handleDesign = () => {
+  handlesketch = () => {
     this.setState({
-      showDesign: true,
+      showsketch: true,
       showWriting: false
     });
   }
 
-  handleDesignModal = (e) => {
+  handlesketchModal = (e) => {
     e.persist();
-    const currentDesignURL = e.target.src;
-    // if (!this.state.designModal) {
-    //   this.setState({ designModal: currentDesignURL });
+    const currentsketchURL = e.target.src;
+    // if (!this.state.sketchModal) {
+    //   this.setState({ sketchModal: currentsketchURL });
     // } else {
-    //   this.setState({ designModal: false });
+    //   this.setState({ sketchModal: false });
     // }
   }
 
@@ -90,10 +90,10 @@ class App extends React.Component {
             handleModal={this.handleModal}
             handleResume={this.handleResume}
             handleWriting={this.handleWriting}
-            handleDesign={this.handleDesign}
-            handleDesignModal={this.handleDesignModal}
+            handlesketch={this.handlesketch}
+            handlesketchModal={this.handlesketchModal}
             showWriting={this.state.showWriting}
-            showDesign={this.state.showDesign}
+            showsketch={this.state.showsketch}
           />} />
           <Route path="/about" render={() => <About
             handleResume={this.handleResume}

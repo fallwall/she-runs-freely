@@ -4,15 +4,15 @@ import { Image, Modal, Icon } from 'semantic-ui-react';
 
 function SketchBox(props) {
 	return(
-		<Modal basic open={props.designModal} >
-			<div className='design-modal'>
+		<Modal basic open={props.sketchModal} >
+			<div className='sketch-modal'>
 				<a href='javascript:;'>
-					<Icon name='remove' onClick={props.handleDesignModal}/>
+					<Icon name='remove' onClick={props.handlesketchModal}/>
 				</a>
 				<Image
-					src={props.designModal}
+					src={props.sketchModal}
 					size='massive'
-					className='design-big'
+					className='sketch-big'
 				/>
 			</div>
 		</Modal>
