@@ -1,9 +1,10 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import HomeContent from './HomeContent';
+
 import Scroll from './Scroll';
 import Title from './Title';
+import Inspire from './Inspire';
 
 export default function Home(props) {
 
@@ -46,7 +47,7 @@ export default function Home(props) {
         >
         </ParallaxBanner>
       </div>
-      <HomeContent />
+      <Inspire />
     </div>
   )
 }

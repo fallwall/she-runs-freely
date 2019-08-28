@@ -7,6 +7,7 @@
   justify-content: left;
   align-items: center;
   top: 25vh;
+  margin-bottom: 20vh;
 }
 
 .sketch > h1 {
@@ -17,7 +18,6 @@
 
 .sketch-header:first-letter{
   color: black;
-  font-family: 'Major Mono Display', monospace;
   font-size: 55px;
   float: left;
   line-height: .9;
@@ -36,6 +36,7 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  margin-top: 20vh;
 }
 
 .enlarge {

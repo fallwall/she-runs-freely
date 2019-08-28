@@ -4,7 +4,7 @@ import Typist from 'react-typist';
 export default class SketchContent extends Component {
   render() {
     return (
-      <div>
+      <div className="inspire">
         <Typist>
           <span> Inspired by Four Tet. </span>
           <Typist.Backspace count={10} delay={200} />

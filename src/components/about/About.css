@@ -38,8 +38,11 @@ h1 {
 
 .skill-labels {
   display: flex;
+  position: relative;
+  top:15vh;
   justify-content: center;
   flex-flow: row wrap;
+  margin-bottom: 180px;
 }
 
 .skill-labels > div {
@@ -76,7 +79,7 @@ h1 {
 
   .intro-more:first-letter {
     color: black;
-    font-family: 'Major Mono Display', monospace;
+   
     font-size: 65px;
     float: left;
     line-height: .9;

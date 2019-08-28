@@ -83,7 +83,6 @@ export default class Projects extends Component {
 
               <div className="project-container">
 
-
                 <Fade clear opposite when={this.state.show1}>
                   <div className="project" id="project-1">
                     <Waypoint onEnter={this.handle1} onLeave={this.handle1} />

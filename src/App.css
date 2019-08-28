@@ -12,9 +12,8 @@ a {
 .splash-page {
   position: relative;
   z-index: 2;
+  top: 2vh;
 }
-
-
 
   /*name parallax container*/
 
@@ -69,5 +68,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
+  .enlarge {
+    font-size:2em;
+  }
+
+  .inspire {
+    margin: 15vh 0;
+    font-size: 1.5em;
   }

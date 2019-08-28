@@ -1,8 +1,4 @@
-.project-head h1 {
-color: black;
-  font-size: 2em;
-  padding-bottom: 15px;
-}
+
 
 .projectall {
     padding: 0px 30px 0px 30px;
@@ -13,16 +9,32 @@ color: black;
     top: 25vh;
 }
 
+.project-page-container {
+  margin-top: -25px;
+}
 
+.project-container {
+  width: 50vw;
+}
+
+.project-header {
+  z-index: 40;
+
+}
 
 .project-header p {
   text-align:left;
   padding-left: 30px;
 }
 
+.project-head a {
+  color:white;
+}
+
+
 .project-header:first-letter {
   color: black;
-  font-family: 'Major Mono Display', monospace;
+ 
   font-size: 65px;
   float: left;
   line-height: .9;
@@ -35,7 +47,6 @@ color: black;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 
 .work-container {
   display: flex;
@@ -54,9 +65,9 @@ color: black;
 }
 
 .project-img {
-  height: 200px;
+  height: 400px;
   padding-right: 10px;
-  border-radius: 15px 15px 0px 15px;
+  border-radius: 15px;
 }
 
 .project-body {
@@ -74,7 +85,9 @@ color: black;
 }
 
 .project-head > h1 {
-  /* background: black; */
+  background: black;
+  color: white;
+  font-size: 2em;
   padding: 5px;
 }
 
@@ -101,4 +114,16 @@ color: black;
 #project-4 {
   padding-top: 200px;
   padding-bottom: 50px;
+}
+
+.enlarge {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -100px;
+  z-index:40;
+}
+
+.enlarge:hover {
+  text-transform: uppercase;
 }

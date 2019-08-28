@@ -5,7 +5,6 @@ import { Image } from 'semantic-ui-react';
 
 import './Sketch.css';
 import SketchBox from './SketchBox';
-import SketchContent from './SketchContent';
 
 export default class SketchBook extends Component {
   render() {
@@ -41,7 +40,7 @@ export default class SketchBook extends Component {
               </Fade>
             </div>
             <div className='sketch-footer'>
-              <SketchContent />
+              
             </div>
           </div>
         </Fade>

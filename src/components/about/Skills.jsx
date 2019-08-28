@@ -23,18 +23,20 @@ function Skills(props) {
   });
 
   return (
-    <div className='skills'>
-      <Divider horizontal>
-        <Header>
-          <div className='enlarge'>skills</div>
-        </Header>
-      </Divider>
-      <div className='skill-labels' onClick={props.handleResume}>
-        <Fade left cascade>
-          {labels}
-        </Fade>
+    <Fade left cascade>
+      <div className='skills'>
+        <Divider horizontal>
+          <Header>
+            <div className='enlarge'>skills</div>
+          </Header>
+        </Divider>
+        <div className='skill-labels'>
+          <Fade left cascade>
+            {labels}
+          </Fade>
+        </div>
       </div>
-    </div>
+    </Fade>
   )
 }
 
