@@ -10,13 +10,13 @@ export default function Home(props) {
 
   return (
     <div>
-      <div className='splash-page'>
+      <div className='hero-page'>
         <Fade clear when={!props.loaded} >
           <div className='load-screen'>
           </div>
         </Fade>
         <ParallaxBanner
-          className='splash-parallax'
+          className='hero-parallax'
           layers={[
             {
               image: '/teton1.png',

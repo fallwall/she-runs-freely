@@ -76,9 +76,9 @@ export default class Projects extends Component {
         <Fade>
           <div className="projectall">
             <div className='project-header'>
-              <p>I make things like this.</p>
+              <p>Most of my projects are conceived with inspirations from nostalgia and simple things in life.</p>
             </div>
-            <p className='enlarge'>Also Lights & Music</p>
+            <p className='enlarge'>Made with Love</p>
             <div className="project-page-container">
 
               <div className="project-container">

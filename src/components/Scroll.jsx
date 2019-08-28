@@ -1,6 +1,4 @@
 import React from 'react';
-
-import { Icon } from 'semantic-ui-react';
 import { Fade } from 'react-reveal';
 
 const Scroll = (props) => {
@@ -9,7 +7,7 @@ const Scroll = (props) => {
 
   return (
     <Fade bottom opposite when={showScroll}>
-      <Icon size='huge' name='chevron down' className='scroll-arrow' />
+      <h2>Web Designer & Developer</h2>
     </Fade>
   )
 }

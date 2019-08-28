@@ -4,7 +4,7 @@ import Jump from 'react-reveal/Jump';
 import { Image } from 'semantic-ui-react';
 
 import './Sketch.css';
-import SketchBox from './SketchBox';
+
 
 export default class SketchBook extends Component {
   render() {
@@ -30,7 +30,7 @@ export default class SketchBook extends Component {
           <div className='sketch'>
 
             <div className='sketch-header'>
-              <p>I was asked to write instruction for my successor in previous job and I drew 20 pages instead.</p>
+              <p>I draw things. Sometimes to clarify something between black and white. Sometimes to recap a moment of inspiration from music.</p>
             </div>
             <p className='enlarge'>Lights & Music</p>
             <div className='sketch-port'>
@@ -40,14 +40,11 @@ export default class SketchBook extends Component {
               </Fade>
             </div>
             <div className='sketch-footer'>
-              
+
             </div>
           </div>
         </Fade>
-        <SketchBox
-          handlesketchModal={this.props.handlesketchModal}
-          sketchModal={this.props.sketchModal}
-        />
+
       </>
     )
   }

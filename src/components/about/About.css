@@ -107,6 +107,10 @@ h1 {
     text-align: center;
   }
 
+  .bio-copy a {
+    text-shadow: 1px 1px grey;
+  }
+
   .about-stuff {
     width: 80%;
     margin: 0 auto;

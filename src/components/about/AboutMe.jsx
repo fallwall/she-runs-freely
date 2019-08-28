@@ -15,7 +15,7 @@ export default class AboutMe extends Component {
           <Fade clear cascade>
 
             <div className='intro'>
-              <p className='intro-more'>Hiiii. I'm Tibby Xu - run all the mile and drink all the ciders.</p>
+              <p className='intro-more'>Hiiii. I'm Tibby Xu. a New York City based web designer & developer.</p>
             </div>
 
 
@@ -26,12 +26,15 @@ export default class AboutMe extends Component {
 
               </div>
               <div className='bio-copy'>
-
-                <p>New York City based maker, web designer & developer.</p>
-                <p>Never not learning, creating, and exploring something new.</p>
+                <p>I thrive in combining lo-fi themes with hi-fi methods.</p>
+                <p>I enjoy constant learning, creating, and exploring something new.</p>
+                <p>To bring laughter to my friends is a major source of motivation.</p>
                 <p>Can be found coding from either a coffee shop or a cider bar.</p>
-                <p>Currently calls Upper West Side home with fierce kitty Roe.</p>
-                <p>Running since 2014, chasing unicorn and a bi-coastal dream.</p>
+                <p>Currently calls Upper West Side home with a fierce kitty Roe.</p>
+                <p>Running distance, chasing unicorn and a bi-coastal dream.</p>
+                <br />
+                <p>For inquiries and collaboration,</p>
+                <p>Feel free to<a href="mailto:sherunsfreely@gmail.com">drop me a line.</a></p>
               </div>
             </div>
           </Fade>
