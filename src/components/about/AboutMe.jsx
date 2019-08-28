@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Skills from './Skills';
 import { Fade } from 'react-reveal';
-
+import Jump from 'react-reveal/Jump';
 
 import ProPic from '../../images/temp_profile.jpg';
 
@@ -9,7 +9,7 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div>
-        <h1>ABOUT ME</h1>
+        <Jump><h1>ABOUT ME</h1></Jump>
         <div className='bio-container'>
 
           <Fade clear cascade>

@@ -6,6 +6,7 @@ import Projects from './components/projects/Projects';
 import SketchBook from './components/sketch/SketchBook';
 import About from './components/about/About';
 import Home from './components/Home';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends React.Component {
@@ -46,11 +47,11 @@ class App extends React.Component {
   handlesketchModal = (e) => {
     e.persist();
     const currentsketchURL = e.target.src;
-    // if (!this.state.sketchModal) {
-    //   this.setState({ sketchModal: currentsketchURL });
-    // } else {
-    //   this.setState({ sketchModal: false });
-    // }
+    if (!this.state.sketchModal) {
+      this.setState({ sketchModal: currentsketchURL });
+    } else {
+      this.setState({ sketchModal: false });
+    }
   }
 
   handleResume = () => {
@@ -66,42 +67,41 @@ class App extends React.Component {
   }
 
   render() {
-
-
-
     return (
-      <div className="App">
-        <ParallaxProvider>
-          <header>
-            <Nav />
-          </header>
+      <>
+        <div className="App">
+          <ParallaxProvider>
+            <header>
+              <Nav />
+            </header>
 
-          <Route exact path="/" render={() => <Home
-            loaded={this.state.loaded}
-            handleModal={this.handleModal}
-            handleResume={this.handleResume}
-            showScroll={this.state.showScroll}
-            showName={this.state.showName}
-          />} />
-          <Route path="/projects" render={() => <Projects />} />
-          <Route path="/sketch" render={() => <SketchBook
-            handleHideScroll={this.handleHideScroll}
-            handleHideName={this.handleHideName}
-            handleModal={this.handleModal}
-            handleResume={this.handleResume}
-            handleWriting={this.handleWriting}
-            handlesketch={this.handlesketch}
-            handlesketchModal={this.handlesketchModal}
-            showWriting={this.state.showWriting}
-            showsketch={this.state.showsketch}
-          />} />
-          <Route path="/about" render={() => <About
-            handleResume={this.handleResume}
-          />} />
+            <Route exact path="/" render={() => <Home
+              loaded={this.state.loaded}
+              handleModal={this.handleModal}
+              handleResume={this.handleResume}
+              showScroll={this.state.showScroll}
+              showName={this.state.showName}
+            />} />
+            <Route path="/projects" render={() => <Projects />} />
+            <Route path="/sketch" render={() => <SketchBook
+              handleHideScroll={this.handleHideScroll}
+              handleHideName={this.handleHideName}
+              handleModal={this.handleModal}
+              handleResume={this.handleResume}
+              handleWriting={this.handleWriting}
+              handlesketch={this.handlesketch}
+              handlesketchModal={this.handlesketchModal}
+              showWriting={this.state.showWriting}
+              showsketch={this.state.showsketch}
+            />} />
+            <Route path="/about" render={() => <About
+              handleResume={this.handleResume}
+            />} />
 
-
-        </ ParallaxProvider>
-      </div>
+          </ ParallaxProvider>
+        </div>
+        <Footer />
+      </>
     );
   }
 }

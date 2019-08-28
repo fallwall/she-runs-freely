@@ -6,8 +6,6 @@
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  position: absolute;
-  z-index: 2;
   top: 25vh;
 }
 
@@ -69,6 +67,6 @@
 
 .sketch-thumb{
   width: 20vw;
-  height: 20vh;
+  height: 25vh;
 }
 

@@ -3,51 +3,32 @@
     "id": 1,
     "project": "Antipode Visualizer",
     "time": "Summer 2019",
-    "cover-image": "http://....jpg",
+    "coverimage": "https://i.imgur.com/Ks06mvN.png",
     "url": "http://sherunsfreely.com/antipodes/",
-    "descrition": "Visual display of antipode of any location. Powered by MapBox API forward & reverse geocoding."
+    "description": "Visual display of antipode of any location. Powered by MapBox API forward & reverse geocoding."
   },
   {
     "id": 2,
     "project": "Video Killed The Radio Star",
     "time": "Summer 2019",
-    "cover-image": "http://....jpg",
+    "coverimage": "https://i.imgur.com/XXKC39r.jpg",
     "url": "http://mtvimeo.surge.sh/",
     "description": "Music player powered by Vimeo API. Music journey to 80s/90s/00s/10s. Bonus track available."
   },
   {
     "id": 3,
-    "project": "project 3??!!",
-    "time": "fall 2019",
-    "cover-image": "http://....jpg",
-    "description": "blahbalhablah"
+    "project": "Benny's Kosher Pizza",
+    "time": "Summer 2019",
+    "url": "http://cowabunga.surge.sh/",
+    "coverimage": "https://i.imgur.com/dBTN63U.png",
+    "description": "Remake of a small business site in Fresh Meadows. In colaboration with fellow SEI coder and UX Team."
   },
   {
     "id": 4,
-    "project": "project 4",
-    "time": "summer 2019",
-    "cover-image": "http://....jpg",
-    "description": "blahbalhablah"
-  },
-  {
-    "id": 5,
-    "project": "project 5?",
-    "time": "fall 2019",
-    "cover-image": "http://....jpg",
-    "description": "blahbalhablah"
-  },
-  {
-    "id": 6,
-    "project": "project 6",
-    "time": "fall 2019",
-    "cover-image": "http://....jpg",
-    "description": "blahbalhablah"
-  },
-  {
-    "id": 7,
-    "project": "project 7",
-    "time": "fall 2019",
-    "cover-image": "http://....jpg",
-    "description": "blahbalhablah"
+    "project": "In My Running Shoes",
+    "time": "Summer 2019",
+    "url": "http://runningshoes.surge.sh/",
+    "coverimage": "https://i.imgur.com/wxREswh.png",
+    "description": "Multi-user interactive running journal for my fellow marathon maniacs. React-on-rails full stack project."
   }
 ]

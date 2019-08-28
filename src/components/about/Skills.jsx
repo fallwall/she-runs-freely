@@ -26,7 +26,7 @@ function Skills(props) {
     <div className='skills'>
       <Divider horizontal>
         <Header>
-          <div className='skills-head'>skills</div>
+          <div className='enlarge'>skills</div>
         </Header>
       </Divider>
       <div className='skill-labels' onClick={props.handleResume}>
