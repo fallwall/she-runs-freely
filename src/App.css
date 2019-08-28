@@ -1,6 +1,7 @@
 * {
   text-align: center;
   font-family: 'Ultra', serif;
+  margin: 0 auto;
 }
 
 a {
@@ -63,11 +64,14 @@ a {
     height: 10vh;
     width: 100%;
     padding: 0px 30px 0px 30px;
-    background: black;
+    background: grey;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-right: 80px; */
+    display:flex;
+    justify-content: space-between;
   }
 
   .enlarge {
@@ -77,4 +81,16 @@ a {
   .inspire {
     margin: 15vh 0;
     font-size: 1.5em;
+  }
+
+  .social img {
+    width: 2em;
+  }
+
+  .social {
+    margin-right: 40px;
+  }
+
+  .social img:hover {
+    width: 50px;
   }

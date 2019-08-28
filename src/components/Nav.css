@@ -1,10 +1,13 @@
+
+
 .nav-links a {
   background-color: black;
-  border: none;
+  border: white 2px solid;
   color: white;
   padding: 16px 32px;
   text-align: center;
-  font-size: 16px;
+  font-size: 2em;
+  width: 20%;
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s ease-out;
@@ -13,5 +16,8 @@
 .nav-links a:hover {
   opacity: 1;
 }
+
+
+
 
 

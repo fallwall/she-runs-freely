@@ -28,6 +28,7 @@
 
 .project-head a {
   color:white;
+  background-color: black;
 }
 
 
@@ -88,6 +89,7 @@
   color: white;
   font-size: 2em;
   padding: 5px;
+  padding-top: 15px;
 }
 
 .demo-arrow {

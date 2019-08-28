@@ -3,7 +3,7 @@ import { Parallax } from 'react-scroll-parallax';
 import { Fade } from 'react-reveal';
 
 
-const Title = (props) => {
+function Title (props) {
   const showName = props.showName;
 
   const makeName = () => {
@@ -23,11 +23,13 @@ const Title = (props) => {
     return letters;
   }
   return (
-    <div className='name-parallax' >
-      <Fade bottom opposite when={showName}>
-        {makeName()}
-      </Fade>
-    </div>
+   
+      <div className='name-parallax' >
+        <Fade bottom opposite when={showName}>
+          {makeName()}
+        </Fade>
+      </div>
+
   )
 };
 

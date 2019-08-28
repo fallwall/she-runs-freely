@@ -1,10 +1,13 @@
 import React from 'react';
+import Social from './Social';
 
 export default function Footer() {
   return (
     <div className="footer">
-     
-      Tibby Xu © 2019
+      <div className="copyright">
+        Tibby Xu © 2019
+      </div>
+      <Social />
     </div>
   )
 }
