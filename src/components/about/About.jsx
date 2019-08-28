@@ -4,7 +4,7 @@ import './About.css';
 
 export default function About(props) {
   return (
-    <div>
+    <div className="about-stuff">
       <AboutMe handleResume={props.handleResume}/>
     </div>
   )

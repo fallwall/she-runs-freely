@@ -3,7 +3,7 @@
     "id": 1,
     "project": "Antipode Visualizer",
     "time": "Summer 2019",
-    "coverimage": "https://i.imgur.com/Ks06mvN.png",
+    "coverimage": "https://i.imgur.com/DF3q1Zx.jpg",
     "url": "http://sherunsfreely.com/antipodes/",
     "description": "Visual display of antipode of any location. Powered by MapBox API forward & reverse geocoding."
   },
@@ -20,7 +20,7 @@
     "project": "Benny's Kosher Pizza",
     "time": "Summer 2019",
     "url": "http://cowabunga.surge.sh/",
-    "coverimage": "https://i.imgur.com/dBTN63U.png",
+    "coverimage": "https://i.imgur.com/aIjWip6.png",
     "description": "Remake of a small business site in Fresh Meadows. In colaboration with fellow SEI coder and UX Team."
   },
   {
@@ -28,7 +28,7 @@
     "project": "In My Running Shoes",
     "time": "Summer 2019",
     "url": "http://runningshoes.surge.sh/",
-    "coverimage": "https://i.imgur.com/wxREswh.png",
+    "coverimage": "https://i.imgur.com/Gm1NTGr.png",
     "description": "Multi-user interactive running journal for my fellow marathon maniacs. React-on-rails full stack project."
   }
 ]
