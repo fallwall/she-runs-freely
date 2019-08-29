@@ -9,20 +9,22 @@
 
 .nav-links a {
   font-family: 'Slabo 13px', serif;
-  background-color: black;
-  border: white 2px solid;
+  /* background-color: black; */
+  /* border: white 2px solid; */
   color: white;
   padding: 16px 32px;
   text-align: center;
   font-size: 2em;
+  font-weight: 800;
   width: 20%;
   margin: 4px 2px;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   transition: 0.3s ease-out;
 }
 
 .nav-links a:hover {
-  opacity: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px white;
 }
 
 
