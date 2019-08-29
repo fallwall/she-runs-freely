@@ -4,6 +4,13 @@
 
 }
 
+::selection {
+  background: lightgrey; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: lightgrey; /* Gecko Browsers */
+}
+
 a {
   text-decoration: none;
   color:black;

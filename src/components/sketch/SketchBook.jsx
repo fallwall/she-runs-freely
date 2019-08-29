@@ -30,7 +30,7 @@ export default class SketchBook extends Component {
           <div className='sketch'>
 
             <div className='sketch-header'>
-              <p>I draw things. Sometimes to clarify something between black and white. Sometimes to recap a moment of inspiration from music.</p>
+              <p>I draw things. Sometimes to clarify something between black and white. </p>
             </div>
             <p className='enlarge'>Lights & Music</p>
             <div className='sketch-port'>
