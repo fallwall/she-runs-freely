@@ -51,10 +51,11 @@ h1 {
 }
 
 .skills-labels > div:hover {
-  color: pink;
+  color: grey;
 }
 
 .skill-names {
+  font-family: 'Slabo 13px', serif;
   color:white;
   background-color: grey;
   padding: 0 10px;
@@ -88,7 +89,7 @@ h1 {
   }
 
   .intro-more:hover:first-letter {
-    color: pink;
+    color: grey;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -101,6 +102,10 @@ h1 {
 
   .bio-copy {
     text-align: left;
+  }
+
+  .bio-copy p {
+    font-family: 'Slabo 13px', serif;
   }
 
   .bio-copy > h1 {

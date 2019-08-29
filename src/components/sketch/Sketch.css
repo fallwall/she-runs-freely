@@ -27,7 +27,7 @@
 
 .sketch-header:hover:first-letter{
   text-transform: uppercase;
-  color: pink;
+  color: grey;
 }
 
 .sketch-port {

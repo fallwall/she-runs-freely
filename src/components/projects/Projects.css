@@ -31,6 +31,10 @@
   background-color: black;
 }
 
+.project-head p {
+  font-family: 'Slabo 13px', serif;
+}
+
 
 .project-header:first-letter {
   color: black;
@@ -43,7 +47,7 @@
 }
 
 .project-header:hover:first-letter {
-  color: pink;
+  color: grey;
   font-weight: bold;
   text-transform: uppercase;
 }
