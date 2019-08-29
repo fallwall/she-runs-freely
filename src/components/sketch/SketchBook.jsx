@@ -8,7 +8,13 @@ import './Sketch.css';
 
 export default class SketchBook extends Component {
   render() {
-    const sketchURLS = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg', 'pic6.jpg'];
+    const sketchURLS = [
+      'https://i.imgur.com/xpSTghz.jpg',
+      'https://i.imgur.com/YqsexQY.jpg',
+      'https://i.imgur.com/iQTzSNU.jpg',
+      'https://i.imgur.com/cOoNix5.jpg',
+      'https://i.imgur.com/DSQsezb.jpg',
+      'https://i.imgur.com/9E9zZaA.jpg'];
     const sketchs = sketchURLS.map((sketch, i) => {
       return (
 
