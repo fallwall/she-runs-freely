@@ -1,4 +1,11 @@
-
+.nav-links {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
 
 .nav-links a {
   font-family: 'Slabo 13px', serif;
