@@ -72,7 +72,7 @@ export default class Projects extends Component {
   render() {
     return (
       <>
-        <Jump><h1>PROJECTS</h1></Jump>
+        <Jump><h1 className="page-title">PROJECTS</h1></Jump>
         <Fade>
           <div className="projectall">
             <div className='project-header'>

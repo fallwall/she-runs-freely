@@ -138,6 +138,10 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.page-title {
+  margin-top: 7rem;
+  font-size: 2em;
+}
     .content p, a {
       font-size: 1em;
     }

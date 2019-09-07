@@ -9,7 +9,7 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div>
-        <Jump><h1>ABOUT ME</h1></Jump>
+        <Jump><h1 className="page-title">ABOUT ME</h1></Jump>
         <div className='bio-container'>
 
           <Fade clear cascade>

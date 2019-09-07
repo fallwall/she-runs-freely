@@ -30,7 +30,7 @@ export default class SketchBook extends Component {
 
     return (
       <>
-        <Jump><h1>SKETCH</h1></Jump>
+        <Jump><h1 className="page-title">SKETCH</h1></Jump>
         <Fade clear cascade>
 
           <div className='sketch'>
