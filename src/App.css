@@ -72,7 +72,7 @@ a {
 
   .footer {
     font-family: 'Slabo 13px', serif;
-    height: 10vh;
+    height: 4rem;
     width: 100%;
     padding: 0px 30px 0px 30px;
     background: grey;
@@ -108,4 +108,36 @@ a {
 
   .social img:hover {
     width: 50px;
+  }
+
+  @media only screen and (max-width: 800px) {
+  .nav-links
+    {
+      font-size: 0.5em;
+    }
+  .nav-links a {
+    margin: auto 1em;
+  }
+  .nav-links span {
+    display: none;
+  }
+  .social img {
+    width: 1.5em;
+  }
+ .copyright {
+   font-size: 0.5em;
+ }
+ .letter {
+  font-size: 2.5em;
+}
+.inspire {
+  margin: 15vh 0;
+  font-size: 1em;
+}
+.web-designer {
+  font-size: 1em;
+}
+    .content p, a {
+      font-size: 1em;
+    }
   }

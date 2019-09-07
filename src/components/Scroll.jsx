@@ -7,7 +7,7 @@ const Scroll = (props) => {
 
   return (
     <Fade bottom opposite when={showScroll}>
-      <h2>Web Designer & Developer</h2>
+      <h2 className="web-designer">Web Designer & Developer</h2>
     </Fade>
   )
 }
