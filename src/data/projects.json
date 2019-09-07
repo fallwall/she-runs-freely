@@ -5,12 +5,14 @@
     "time": "Summer 2019",
     "coverimage": "https://i.imgur.com/Y2PxA0p.png",
     "url": "http://sherunsfreely.com/antipodes/",
+    "github": "https://github.com/fallwall/antipodes-visualizer",
     "description": "Visual display of antipode of any location. Powered by MapBox API forward & reverse geocoding."
   },
   {
     "id": 2,
     "project": "Video Killed The Radio Star",
     "time": "Summer 2019",
+    "github": "https://github.com/fallwall/video-killed-the-radio-star",
     "coverimage": "https://i.imgur.com/XXKC39r.jpg",
     "url": "http://mtvimeo.surge.sh/",
     "description": "Music player powered by Vimeo API. Music journey to 80s/90s/00s/10s. Bonus track available."
@@ -20,6 +22,7 @@
     "project": "Benny's Kosher Pizza",
     "time": "Summer 2019",
     "url": "http://cowabunga.surge.sh/",
+    "github": "https://github.com/fallwall/sei-uxdi-cowabunga",
     "coverimage": "https://i.imgur.com/aIjWip6.png",
     "description": "Remake of a small business site in Fresh Meadows. In colaboration with fellow SEI coder and UX Team."
   },
@@ -28,7 +31,17 @@
     "project": "In My Running Shoes",
     "time": "Summer 2019",
     "url": "http://runningshoes.surge.sh/",
+    "github": "https://github.com/fallwall/in-my-running-shoes",
     "coverimage": "https://i.imgur.com/Gm1NTGr.png",
     "description": "Multi-user interactive running journal for my fellow marathon maniacs. React-on-rails full stack project."
+  },
+  {
+    "id": 5,
+    "project": "Panda Dining Club",
+    "time": "Summer 2019",
+    "github": "https://github.com/fallwall/rn-yelp-app",
+    "url": "",
+    "coverimage": "https://i.imgur.com/93g0lU5.png",
+    "description": "Discover your next favorite earery. React Native App powered by Yelp API."
   }
 ]
