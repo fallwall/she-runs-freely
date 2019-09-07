@@ -18,7 +18,9 @@ function Skills(props) {
     'P5.js',
     'Python',
     'SQL',
-    'AWS'
+    'AWS',
+    'React Native',
+    'Java'
   ]
 
   const labels = skillList.map((skill, i) => {
